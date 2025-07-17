@@ -64,6 +64,45 @@
             margin-bottom: 15px;
         }
         
+        /* Automation Banner - NEW! */
+        .automation-banner {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .automation-banner h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .automation-banner p {
+            color: white;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .automation-link {
+            background: white;
+            color: #f5576c;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .automation-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
         /* AI Section */
         .ai-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -240,6 +279,10 @@
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
         }
         
+        .action-btn.automation {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
         .action-btn-icon {
             font-size: 2em;
         }
@@ -305,6 +348,11 @@
             color: white;
         }
         
+        .tab.automation-tab {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
         .tab-content {
             display: none;
             animation: fadeIn 0.5s;
@@ -355,6 +403,15 @@
             <p><strong>Remember: Pick ONE thing to explore today. That's perfect progress!</strong></p>
         </div>
         
+        <!-- NEW: Automation Banner -->
+        <div class="automation-banner">
+            <h2>⚡ NEW: Automated Workflow System!</h2>
+            <p>Run your entire corpus processing workflow with one click!</p>
+            <a href="automation.html" class="automation-link">
+                Open Automated Workflow →
+            </a>
+        </div>
+        
         <!-- AI Section -->
         <div class="ai-section">
             <h2>🤖 AI-Enhanced Features</h2>
@@ -400,6 +457,11 @@
                     <span class="action-btn-icon">📖</span>
                     <span>WikiSource</span>
                 </a>
+                <!-- NEW: Automation Button in Quick Actions -->
+                <a href="automation.html" class="action-btn automation">
+                    <span class="action-btn-icon">⚡</span>
+                    <span>Automated Workflow</span>
+                </a>
             </div>
         </div>
         
@@ -410,6 +472,8 @@
             <button class="tab" onclick="showTab('corpus')">📚 Corpus Sources</button>
             <button class="tab" onclick="showTab('ai-tools')">🤖 AI/ML Tools</button>
             <button class="tab" onclick="showTab('workflow')">📋 Workflow</button>
+            <!-- NEW: Automation Tab -->
+            <button class="tab automation-tab" onclick="window.location.href='automation.html'">⚡ Automation</button>
         </div>
         
         <!-- Tab: Tools & Resources -->
@@ -752,6 +816,15 @@
             <div class="section-card" style="max-width: 800px; margin: 0 auto;">
                 <h2>📋 Your Complete Workflow</h2>
                 
+                <!-- NEW: Link to Automation -->
+                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 15px; margin: 20px 0; text-align: center;">
+                    <h3 style="color: white;">⚡ Want This Automated?</h3>
+                    <p style="margin-bottom: 20px;">Run this entire workflow with one click!</p>
+                    <a href="automation.html" style="background: white; color: #f5576c; padding: 15px 30px; text-decoration: none; border-radius: 30px; display: inline-block; font-weight: bold;">
+                        Open Automated Workflow →
+                    </a>
+                </div>
+                
                 <div style="background: #e8f5e9; padding: 30px; border-radius: 15px; margin: 20px 0;">
                     <h3>🌱 Step 1: Collect Texts</h3>
                     <ol style="line-height: 2;">
@@ -867,6 +940,8 @@
 
 Everything here is a real, working link to actual tools.
 Pick any button and explore - you can't break anything!
+
+NEW: Check out the Automated Workflow for one-click processing! ⚡
 
 Remember: One small step is perfect progress! 💙
         `);
