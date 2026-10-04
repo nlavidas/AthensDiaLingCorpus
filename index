@@ -822,7 +822,7 @@ python analyze_patterns.py --file iliad_parsed.json</code>
             <h2>🤖 AI-Powered Features</h2>
             
             <div class="module" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
-                <h3 style="color: white;">Claude AI Integration</h3>
+                <h3 style="color: white;">team AI Integration</h3>
                 <p>Get intelligent assistance for your research:</p>
                 <ul style="margin: 20px 0;">
                     <li>Automatic text classification and dating</li>
@@ -986,17 +986,17 @@ python analyze_patterns.py --file iliad_parsed.json</code>
         // AI features
         async function testAI() {
             try {
-                if (window.claude && window.claude.complete) {
-                    const response = await window.claude.complete(`
+                if (window.team && window.team.complete) {
+                    const response = await window.team.complete(`
                         Provide encouraging advice for someone starting a diachronic corpus project.
                         Focus on small, achievable steps. Be warm and supportive.
                     `);
-                    alert("Claude AI says:\n\n" + response);
+                    alert("team AI says:\n\n" + response);
                 } else {
                     alert("AI Assistant says:\n\nYou're starting something amazing! Begin with just one text - even a single paragraph counts. Every great corpus started with someone taking that first small step. You've got this! 🌟");
                 }
             } catch (error) {
-                alert("AI features work best in the full Claude environment. For now, remember: You're doing great! Start with one tiny thing today. 💚");
+                alert("AI features work best in the full team environment. For now, remember: You're doing great! Start with one tiny thing today. 💚");
             }
         }
         

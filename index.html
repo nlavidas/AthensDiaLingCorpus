@@ -425,7 +425,7 @@
         <!-- AI Section -->
         <div class="ai-section">
             <h2>🤖 AI-Enhanced Features</h2>
-            <p>Intelligent tools to help your research (Claude AI integration ready!)</p>
+            <p>Intelligent tools to help your research (team AI integration ready!)</p>
 
             <div class="ai-features">
                 <div class="ai-feature">
@@ -937,23 +937,23 @@
             event.target.classList.add('active');
         }
 
-        // Claude AI integration (ready when in Claude environment)
-        async function useClaudeAI() {
+        // team AI integration (ready when in team environment)
+        async function useteamAI() {
             try {
-                if (window.claude && window.claude.complete) {
-                    const response = await window.claude.complete(`
+                if (window.team && window.team.complete) {
+                    const response = await window.team.complete(`
                         Provide suggestions for diachronic corpus analysis focusing on:
                         - Greek-Latin language contact
                         - Valency pattern changes
                         - Retranslation chains
                         Be encouraging and practical.
                     `);
-                    alert("Claude AI Analysis:\n\n" + response);
+                    alert("team AI Analysis:\n\n" + response);
                 } else {
-                    alert("Claude AI features work best in the Claude environment. For now, all the tools linked here will help with your analysis!");
+                    alert("team AI features work best in the team environment. For now, all the tools linked here will help with your analysis!");
                 }
             } catch (error) {
-                console.log("AI features ready for Claude environment");
+                console.log("AI features ready for team environment");
             }
         }
 
